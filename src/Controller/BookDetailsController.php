@@ -14,6 +14,12 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/book/details')]
 class BookDetailsController extends AbstractController
 {
+
+
+
+
+
+
     #[Route('/', name: 'book_details_index', methods: ['GET'])]
     public function index(BookDetailsRepository $bookDetailsRepository): Response
     {

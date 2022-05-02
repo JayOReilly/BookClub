@@ -27,6 +27,21 @@ class BookDetails
      */
     private $author;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+
+
+
+
+
+
+
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+
     public function getId(): ?int
     {
         return $this->id;
@@ -55,4 +70,7 @@ class BookDetails
 
         return $this;
     }
+
+
+
 }

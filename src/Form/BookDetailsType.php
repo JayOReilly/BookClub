@@ -14,7 +14,9 @@ class BookDetailsType extends AbstractType
         $builder
             ->add('title')
             ->add('author')
+
         ;
+
     }
 
     public function configureOptions(OptionsResolver $resolver): void

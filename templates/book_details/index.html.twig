@@ -3,9 +3,10 @@
 {% block title %}BookDetails index{% endblock %}
 
 {% block body %}
-    <h1>BookDetails index</h1>
+    <h1>Book Catalogue</h1>
 
     <table class="table">
+
         <thead>
             <tr>
                 <th>Id</th>
@@ -23,6 +24,7 @@
                 <td>
                     <a href="{{ path('book_details_show', {'id': book_detail.id}) }}">show</a>
                     <a href="{{ path('book_details_edit', {'id': book_detail.id}) }}">edit</a>
+                    <a href="show.html.twig">Review this book</a>
                 </td>
             </tr>
         {% else %}

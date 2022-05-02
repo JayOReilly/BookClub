@@ -20,13 +20,17 @@ class AppFixtures extends Fixture
         $book1->setTitle("Harry Potter");
         $book1->setAuthor("JK Rowling");
 
+
         $book2 = new BookDetails();
         $book2->setTitle("Game Of Thrones");
         $book2->setAuthor("George R Martin");
 
+
         $book3 = new BookDetails();
         $book3->setTitle("Roy Keane Autobiography");
         $book3->setAuthor("Roy Keane");
+
+
 
 
 
@@ -41,6 +45,8 @@ class AppFixtures extends Fixture
             'password' => 'doe',
             'role' => 'ROLE_ADMIN'
         ]);
+
+
 
         $manager->persist($book1);
         $manager->persist($book2);
