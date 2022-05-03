@@ -50,8 +50,8 @@ class LoginFormAuthenticator extends AbstractLoginFormAuthenticator
         }
 
         // For example:
-        return new RedirectResponse($this->urlGenerator->generate('book_details_index'));
-        throw new \Exception('book_details_index'.__FILE__);
+        return new RedirectResponse($this->urlGenerator->generate('book_cat_index'));
+        //throw new \Exception('book_details_index'.__FILE__);
     }
 
     protected function getLoginUrl(Request $request): string

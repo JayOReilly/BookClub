@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New BookCat{% endblock %}
+
+{% block body %}
+    <h1>Create new BookCat</h1>
+
+    {{ include('book_cat/_form.html.twig') }}
+
+    <a href="{{ path('book_cat_index') }}">back to list</a>
+{% endblock %}

@@ -29,7 +29,7 @@ class DefaultController extends AbstractController
         return $this->render($template, $argsArray);
     }
 
-    #[Route('/book/details', name: 'bookList')]
+    #[Route('/book/cat/', name: 'bookList')]
     public function bookList(): Response
     {
         $template = 'bookDetails.html.twig';
