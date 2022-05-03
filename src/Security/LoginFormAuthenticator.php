@@ -43,15 +43,15 @@ class LoginFormAuthenticator extends AbstractLoginFormAuthenticator
         );
     }
 
-    public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): RedirectResponse
+    public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
     {
         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {
             return new RedirectResponse($targetPath);
         }
 
         // For example:
-        return new RedirectResponse($this->urlGenerator->generate('books_details'));
-        #throw new \Exception('user_index'.__FILE__);
+        return new RedirectResponse($this->urlGenerator->generate('book_details_index'));
+        throw new \Exception('book_details_index'.__FILE__);
     }
 
     protected function getLoginUrl(Request $request): string

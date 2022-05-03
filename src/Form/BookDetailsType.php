@@ -15,6 +15,8 @@ class BookDetailsType extends AbstractType
             ->add('title')
             ->add('author')
 
+
+
         ;
 
     }

@@ -28,8 +28,9 @@ class BookDetails
     private $author;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text", nullable=true)
      */
+
 
 
 
@@ -70,6 +71,8 @@ class BookDetails
 
         return $this;
     }
+
+
 
 
 

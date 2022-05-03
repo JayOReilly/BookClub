@@ -35,13 +35,13 @@ class AppFixtures extends Fixture
 
 
         UserFactory::createOne([
-            'username' => 'matt',
+            'email' => 'matt@matt.com',
             'password' => 'smith',
             'role' => 'ROLE_ADMIN'
         ]);
 
         UserFactory::createOne([
-            'username' => 'john',
+            'email' => 'john@john.com',
             'password' => 'doe',
             'role' => 'ROLE_ADMIN'
         ]);
